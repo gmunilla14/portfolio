@@ -3,11 +3,10 @@ import Project from "../components/project";
 const Projects = () => {
   return (
     <Project
-      title="This is the title of the portfolio article and it wraps"
+      title="Requirements Host"
       metadata="Web App | Personal Project"
-      oneLiner="A one liner describing what this project is all about."
-      description="A short description with what you this project is all about and why
-  you built it. Shouldn’t be more than a couple of lines."
+      oneLiner="A place to keep project requirements and collaborate with teammates."
+      description="Keep your requirements, projects, and links all in one place with this requirements database. Take advantage of inline editing, frontend filtering, role based access, and light/dark mode to optimize your design experience."
       skills={[
         "HTML",
         "CSS",
