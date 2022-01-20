@@ -1,13 +1,101 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+button {
+  background-color: #007bfe;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 58px;
+  padding-right: 58px;
+  color: #ffffff;
+  border-radius: 8px;
+  box-shadow: none;
+  border-style: none;
+  margin-bottom: 58px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.intro-section-holder {
+  background-color: #f8f9fa;
+  width: 100vw;
+}
+
+.intro-holder {
+  padding-top: 57px;
+  margin-left: 129px;
+  width: 50vw;
+}
+
+.hey {
+  font-size: 26px;
+  padding-bottom: 24px;
+}
+
+.title {
+  font-size: 44px;
+  padding-bottom: 20px;
+}
+
+.introduction {
+  font-size: 18px;
+  padding-bottom: 30px;
+}
+
+.creds-holder {
+  display: flex;
+  height: 224px;
+  width: 80vw;
+  margin-top: 80px;
+  margin-bottom: 30px;
+  background-color: #f8f9fa;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  border-radius: 32px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.technologies {
+  margin-right: 10vw;
+  width: 30vw;
+}
+
+.technology-title {
+  text-align: center;
+  font-size: 28px;
+}
+
+.statement {
+  width: 30vw;
+  margin-left: 10vw;
+}
+
+.skills-holder {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+.skill {
+  color: #007bfe;
+  background-color: #eef4ff;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 12px;
+  padding-right: 12px;
+  margin-left: 3px;
+  margin-right: 3px;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  border-radius: 8px;
+}
+
+.project-holder {
+  height: 420px;
+  width: 80vw;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  margin-top: 50px;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 32px;
+  border-color: #f4f5f5;
+  display: flex;
 }
