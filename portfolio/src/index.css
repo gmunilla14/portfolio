@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Source+Code+Pro:wght@400;600&family=Source+Sans+Pro:wght@700&display=swap");
+
 button {
   background-color: #007bfe;
   padding-top: 6px;
@@ -25,16 +27,27 @@ button {
 .hey {
   font-size: 26px;
   padding-bottom: 24px;
+  font-weight: 700;
+  font-family: Source Sans Pro, sans-serif;
+
 }
 
 .title {
   font-size: 44px;
   padding-bottom: 20px;
+  font-weight: 700;
+  font-family: Source Sans Pro, sans-serif;
 }
 
 .introduction {
   font-size: 18px;
   padding-bottom: 30px;
+  font-family: Nunito, sans-serif;
+}
+
+button {
+  font-family: Nunito, sans-serif;
+  font-weight: 700;
 }
 
 .creds-holder {
@@ -59,11 +72,14 @@ button {
 .technology-title {
   text-align: center;
   font-size: 28px;
+  font-family: Nunito, sans-serif;
+  font-weight: 600;
 }
 
 .statement {
   width: 30vw;
   margin-left: 10vw;
+  font-family: Nunito, sans-serif;
 }
 
 .skills-holder {
@@ -85,6 +101,9 @@ button {
   margin-top: 3px;
   margin-bottom: 3px;
   border-radius: 8px;
+  font-family: Source Code Pro, sans-serif;
+  font-size: 12px;
+  font-weight: 600;
 }
 
 .project-holder {
@@ -112,21 +131,26 @@ button {
 
 .project-title {
   font-size: 26px;
+  font-family: Nunito, sans-serif;
+  font-weight: 700;
 }
 
 .project-metadata {
   margin-top: 24px;
   margin-bottom: 12px;
   font-size: 18px;
+  font-family: Source Code Pro, sans-serif;
 }
 
 .project-oneliner {
   font-weight: 700;
   margin-bottom: 12px;
+  font-family: Nunito, sans-serif;
 }
 
 .project-description {
   margin-bottom: 20px;
+  font-family: Nunito, sans-serif;
 }
 
 .contact-page-holder {
@@ -151,9 +175,12 @@ button {
 .contact-title {
   font-size: 38px;
   text-align: center;
+  font-family: Nunito, sans-serif;
+  font-weight: 600;
 }
 
 .text-input-holder {
+  font-family: Source Code Pro, sans-serif;
   margin-top: 18px;
 }
 
@@ -162,12 +189,24 @@ button {
 }
 
 
-input {
+input, textarea{
   border:none;
   background-color: #f8f9fa;
   height: 40px;
   width: 100%;
   border-radius: 4px;
+  resize: none;
+  font-family: Source Code Pro, sans-serif;
+  padding-left: 8px;
+}
+
+input {
+  height: 40px;
+}
+
+textarea {
+  height: 148px;
+  padding-top: 9px;
 }
 
 input:focus, textarea:focus {
@@ -178,14 +217,6 @@ input:focus, textarea:focus {
 
 }
 
-textarea {
-  border-style: none;
-  background-color: #f8f9fa;
-  width: 100%;
-  border-radius: 4px;
-  resize: none;
-  height: 148px;
-}
 
 .contact-btn-holder {
   padding-top: 40px;

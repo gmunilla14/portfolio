@@ -5,7 +5,7 @@ const TextInput = ({ title, type }) => {
       {type === "textarea" ? (
         <textarea  />
       ) : (
-        <input type={type} autocomplete="off"/>
+        <input type={type} />
       )}
     </div>
   );
