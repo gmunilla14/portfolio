@@ -99,3 +99,32 @@ button {
   border-color: #f4f5f5;
   display: flex;
 }
+
+.project-image {
+  border-radius: 32px;
+}
+
+.project-content {
+  padding-left: 65px;
+  padding-top: 55px;
+  padding-right: 65px;
+}
+
+.project-title {
+  font-size: 26px;
+}
+
+.project-metadata {
+  margin-top: 24px;
+  margin-bottom: 12px;
+  font-size: 18px;
+}
+
+.project-oneliner {
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.project-description {
+  margin-bottom: 20px;
+}
