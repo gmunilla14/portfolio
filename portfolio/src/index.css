@@ -128,3 +128,67 @@ button {
 .project-description {
   margin-bottom: 20px;
 }
+
+.contact-page-holder {
+  border-style: solid;
+  border-width: 2px;
+  border-color: #f4f5f5;
+  border-radius: 32px;
+  height: 625px;
+  width: 80vw;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  margin-top: 80px;
+}
+
+.contact-content {
+  padding-top: 57px;
+  padding-left: 25vw;
+  padding-right: 25vw;
+
+}
+
+.contact-title {
+  font-size: 38px;
+  text-align: center;
+}
+
+.text-input-holder {
+  margin-top: 18px;
+}
+
+.input-title {
+  margin-bottom: 10px;
+}
+
+
+input {
+  border:none;
+  background-color: #f8f9fa;
+  height: 40px;
+  width: 100%;
+  border-radius: 4px;
+}
+
+input:focus, textarea:focus {
+  border-color: #007bfe;
+  border-width: 2px;
+  border-style: solid;
+  outline: none
+
+}
+
+textarea {
+  border-style: none;
+  background-color: #f8f9fa;
+  width: 100%;
+  border-radius: 4px;
+  resize: none;
+  height: 148px;
+}
+
+.contact-btn-holder {
+  padding-top: 40px;
+  text-align: center;
+}
+
