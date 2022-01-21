@@ -1,5 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Source+Code+Pro:wght@400;600&family=Source+Sans+Pro:wght@700&display=swap");
 
+:root {
+  --section-spacing: 10vw;
+  --intro-width: 50vw;
+  --contact-spacing: 25vw;
+}
+
 button {
   background-color: #007bfe;
   padding-top: 6px;
@@ -20,8 +26,8 @@ button {
 
 .intro-holder {
   padding-top: 57px;
-  margin-left: 129px;
-  width: 50vw;
+  margin-left: var(--section-spacing);
+  width: var(--intro-width);
 }
 
 .hey {
@@ -53,20 +59,18 @@ button {
 .creds-holder {
   display: flex;
   height: 224px;
-  width: 80vw;
   margin-top: 80px;
   margin-bottom: 30px;
   background-color: #f8f9fa;
-  margin-left: 10vw;
-  margin-right: 10vw;
+  margin-left: var(--section-spacing);
+  margin-right: var(--section-spacing);
   border-radius: 32px;
   align-items: center;
   justify-content: space-between;
 }
 
 .technologies {
-  margin-right: 10vw;
-  width: 30vw;
+  margin-right: var(--section-spacing);
 }
 
 .technology-title {
@@ -77,8 +81,7 @@ button {
 }
 
 .statement {
-  width: 30vw;
-  margin-left: 10vw;
+  margin-left: var(--section-spacing);
   font-family: Nunito, sans-serif;
 }
 
@@ -107,10 +110,9 @@ button {
 }
 
 .project-holder {
-  height: 420px;
-  width: 80vw;
-  margin-left: 10vw;
-  margin-right: 10vw;
+  min-height: 420px;
+  margin-left: var(--section-spacing);
+  margin-right: var(--section-spacing);
   margin-top: 50px;
   border-style: solid;
   border-width: 2px;
@@ -124,7 +126,7 @@ button {
 }
 
 .project-content {
-  padding-left: 65px;
+  padding-left: var(--section-spacing);
   padding-top: 55px;
   padding-right: 65px;
 }
@@ -159,16 +161,15 @@ button {
   border-color: #f4f5f5;
   border-radius: 32px;
   height: 625px;
-  width: 80vw;
-  margin-left: 10vw;
-  margin-right: 10vw;
+  margin-left: var(--section-spacing);
+  margin-right: var(--section-spacing);
   margin-top: 80px;
 }
 
 .contact-content {
   padding-top: 57px;
-  padding-left: 25vw;
-  padding-right: 25vw;
+  padding-left: var(--contact-spacing);
+  padding-right: var(--contact-spacing);
 
 }
 
@@ -223,3 +224,69 @@ input:focus, textarea:focus {
   text-align: center;
 }
 
+
+@media (max-width: 1170px){
+  :root{
+    --section-spacing: 5vw;
+    --intro-width: 60vw;
+    --contact-spacing: 20vw;
+  }
+}
+
+ 
+@media (max-width: 880px){
+  :root{
+    --section-spacing: 2vw;
+    --intro-width: 70vw;
+    --contact-spacing: 15vw;
+  }
+}
+
+@media (max-width: 500px){
+  :root{
+    --intro-width: 80vw;
+    --contact-spacing: 10vw;
+  }
+}
+
+@media (max-width: 375px){
+  .hey {
+    font-size: 20px;
+  }
+
+  .title {
+    font-size: 28px;
+  }
+
+  .introduction {
+    font-size: 12px;
+  }
+
+  .technology-title {
+   font-size: 20px;
+  }
+
+  .statement {
+    font-size: 12px;
+  }
+
+  .skill {
+    font-size: 9px;
+  }
+
+  .project-title {
+    font-size: 18px;
+  }
+
+  .project-metadata {
+    font-size: 12px;
+  }
+
+  .project-oneliner {
+    font-size: 9px;
+  }
+
+  .project-description {
+    font-size: 9px;
+  }
+}
