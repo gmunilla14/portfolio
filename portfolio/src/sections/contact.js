@@ -3,7 +3,7 @@ import Button from "../components/button";
 
 const Contact = () => {
   return (
-    <div className="contact-page-holder">
+    <div className="contact-page-holder" id="contact-page-holder">
       <div className="contact-content">
         <div className="contact-title">Contact</div>
         <form>

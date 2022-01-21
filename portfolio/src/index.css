@@ -36,7 +36,6 @@ button {
   padding-bottom: 24px;
   font-weight: 700;
   font-family: Source Sans Pro, sans-serif;
-
 }
 
 .title {
@@ -99,7 +98,6 @@ button {
   margin-left: 0px;
   width: 65%;
 }
-
 
 .skill {
   color: #007bfe;
@@ -178,7 +176,6 @@ button {
   padding-top: 57px;
   padding-left: var(--contact-spacing);
   padding-right: var(--contact-spacing);
-
 }
 
 .contact-title {
@@ -197,9 +194,9 @@ button {
   margin-bottom: 10px;
 }
 
-
-input, textarea{
-  border:none;
+input,
+textarea {
+  border: none;
   background-color: #f8f9fa;
   height: 40px;
   width: 100%;
@@ -218,14 +215,13 @@ textarea {
   padding-top: 9px;
 }
 
-input:focus, textarea:focus {
+input:focus,
+textarea:focus {
   border-color: #007bfe;
   border-width: 2px;
   border-style: solid;
-  outline: none
-
+  outline: none;
 }
-
 
 .contact-btn-holder {
   padding-top: 40px;
@@ -254,21 +250,22 @@ input:focus, textarea:focus {
 
 .nav-section {
   padding-right: 48px;
-
 }
 
+.highlighted {
+  color: #007bfe;
+}
 
-@media (max-width: 1170px){
-  :root{
+@media (max-width: 1170px) {
+  :root {
     --section-spacing: 5vw;
     --intro-width: 60vw;
     --contact-spacing: 20vw;
   }
 }
 
- 
-@media (max-width: 880px){
-  :root{
+@media (max-width: 880px) {
+  :root {
     --section-spacing: 2vw;
     --intro-width: 70vw;
     --contact-spacing: 15vw;
@@ -286,13 +283,10 @@ input:focus, textarea:focus {
   .project-content {
     padding-top: 10px;
   }
-
-
 }
 
-
-@media (max-width: 500px){
-  :root{
+@media (max-width: 500px) {
+  :root {
     --intro-width: 80vw;
     --contact-spacing: 10vw;
   }
@@ -309,10 +303,9 @@ input:focus, textarea:focus {
   .project-skills-holder {
     width: 80%;
   }
-
 }
 
-@media (max-width: 375px){
+@media (max-width: 375px) {
   .hey {
     font-size: 20px;
   }
@@ -326,7 +319,7 @@ input:focus, textarea:focus {
   }
 
   .technology-title {
-   font-size: 20px;
+    font-size: 20px;
   }
 
   .statement {
@@ -358,16 +351,14 @@ input:focus, textarea:focus {
   }
 
   .input-title {
-    font-size: 12px
+    font-size: 12px;
   }
 
   .nav-section {
     padding-right: 16px;
-  
   }
 
   .project-skills-holder {
-
     width: 100%;
   }
 }
