@@ -22,6 +22,7 @@ button {
 .intro-section-holder {
   background-color: #f8f9fa;
   width: 100vw;
+  padding-top: 70px;
 }
 
 .intro-holder {
@@ -88,10 +89,18 @@ button {
 .skills-holder {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
   justify-content: center;
+  width: 65%;
   margin: auto;
 }
+
+.project-skills-holder {
+  margin-bottom: 16px;
+  margin-left: 0px;
+  width: 65%;
+}
+
+
 .skill {
   color: #007bfe;
   background-color: #eef4ff;
@@ -99,8 +108,7 @@ button {
   padding-bottom: 2px;
   padding-left: 12px;
   padding-right: 12px;
-  margin-left: 3px;
-  margin-right: 3px;
+  margin-right: 6px;
   margin-top: 3px;
   margin-bottom: 3px;
   border-radius: 8px;
@@ -224,6 +232,31 @@ input:focus, textarea:focus {
   text-align: center;
 }
 
+.navbar-holder {
+  height: 70px;
+  box-shadow: 0px 6px 6px 0px #00000029;
+  font-family: Nunito, sans-serif;
+  font-weight: 700;
+  width: 100%;
+  position: fixed;
+  overflow: hidden;
+  background-color: #ffffff;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-content-holder {
+  display: flex;
+  padding-top: 24px;
+  position: absolute;
+  right: 8px;
+}
+
+.nav-section {
+  padding-right: 48px;
+
+}
+
 
 @media (max-width: 1170px){
   :root{
@@ -240,13 +273,43 @@ input:focus, textarea:focus {
     --intro-width: 70vw;
     --contact-spacing: 15vw;
   }
+
+  .project-holder {
+    display: block;
+  }
+
+  .project-image {
+    transform: translateX(50%);
+    margin-top: 16px;
+  }
+
+  .project-content {
+    padding-top: 10px;
+  }
+
+
 }
+
 
 @media (max-width: 500px){
   :root{
     --intro-width: 80vw;
     --contact-spacing: 10vw;
   }
+
+  .statement {
+    display: none;
+  }
+
+  .nav-section {
+    padding-right: 32px;
+    font-size: 14px;
+  }
+
+  .project-skills-holder {
+    width: 80%;
+  }
+
 }
 
 @media (max-width: 375px){
@@ -288,5 +351,23 @@ input:focus, textarea:focus {
 
   .project-description {
     font-size: 9px;
+  }
+
+  .contact-title {
+    font-size: 28px;
+  }
+
+  .input-title {
+    font-size: 12px
+  }
+
+  .nav-section {
+    padding-right: 16px;
+  
+  }
+
+  .project-skills-holder {
+
+    width: 100%;
   }
 }

@@ -11,7 +11,7 @@ const Credentials = () => {
     "Bootstrap",
   ];
   return (
-    <div className="creds-holder">
+    <div className="creds-holder" id="creds-section">
       <div className="statement">
         I am a <strong>full stack web developer.</strong>
       </div>

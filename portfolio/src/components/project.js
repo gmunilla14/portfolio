@@ -9,7 +9,7 @@ const Project = ({ title, metadata, oneLiner, description, skills }) => {
         <div className="project-metadata">{metadata}</div>
         <div className="project-oneliner">{oneLiner}</div>
         <div className="project-description">{description}</div>
-        <div className="skills-holder" style={{ justifyContent: "start" }}>
+        <div className="skills-holder project-skills-holder" style={{ justifyContent: "start" }}>
           {skills.map((skill) => {
             return <Skill text={skill} />;
           })}

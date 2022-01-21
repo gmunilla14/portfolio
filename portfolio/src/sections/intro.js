@@ -2,7 +2,7 @@ import Button from "../components/button";
 
 const Intro = () => {
   return (
-    <div className="intro-section-holder">
+    <div className="intro-section-holder" id="intro-section">
       <div className="intro-holder">
           <div className="hey">Hey 👋🏻</div>
           <div className="title">I'm Greg, software engineer</div>
