@@ -2,10 +2,10 @@ const NavBar = ({status}) => {
   return (
     <div className="navbar-holder">
       <div className="nav-content-holder">
-        <div className={status ==='introduction'? "nav-section highlighted": 'nav-section'}>Home</div>
-        <div className={status ==='creds'? "nav-section highlighted": 'nav-section'}>About</div>
-        <div className={status ==='projects'? "nav-section highlighted": 'nav-section'}>Projects</div>
-        <div className={status ==='contact'? "nav-section highlighted": 'nav-section'}>Contact</div>
+        <a href='#intro-section' className={status ==='introduction'? "nav-section highlighted": 'nav-section'}>Home</a>
+        <a href='#creds-section' className={status ==='creds'? "nav-section highlighted": 'nav-section'}>About</a>
+        <a href='#projects-section' className={status ==='projects'? "nav-section highlighted": 'nav-section'}>Projects</a>
+        <a href='#contact-page-holder'className={status ==='contact'? "nav-section highlighted": 'nav-section'}>Contact</a>
       </div>
     </div>
   );

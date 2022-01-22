@@ -16,7 +16,7 @@ const Main = () => {
       setStatus("introduction");
     } else {
       var credsRect = document
-        .getElementById("creds-section")
+        .getElementById("creds-content")
         .getBoundingClientRect();
       if (credsRect.y >= -(credsRect.height / 2) + 70) {
         setStatus("creds");

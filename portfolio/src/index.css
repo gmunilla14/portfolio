@@ -6,6 +6,10 @@
   --contact-spacing: 25vw;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 button {
   background-color: #007bfe;
   padding-top: 6px;
@@ -56,11 +60,13 @@ button {
   font-weight: 700;
 }
 
+.creds-section-holder {
+  padding-top: 80px;
+}
+
 .creds-holder {
   display: flex;
   height: 224px;
-  margin-top: 80px;
-  margin-bottom: 30px;
   background-color: #f8f9fa;
   margin-left: var(--section-spacing);
   margin-right: var(--section-spacing);
@@ -91,6 +97,10 @@ button {
   justify-content: center;
   width: 65%;
   margin: auto;
+}
+
+.projects-section {
+  padding-top: 30px;
 }
 
 .project-skills-holder {
@@ -250,6 +260,8 @@ textarea:focus {
 
 .nav-section {
   padding-right: 48px;
+  color: #000000;
+  text-decoration: none;
 }
 
 .highlighted {
