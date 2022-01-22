@@ -40,11 +40,7 @@ const Contact = () => {
     emailjs.init("user_gwVTLVUUXVJK1ZeSbKAbA");
 
     emailjs
-      .send("service_dkc114f", "template_jrz5w7j", {
-        name: "Kyle Thumar",
-        message: "Hi I am your friend",
-        email: "kthumar14@gmail.com",
-      })
+      .send("service_dkc114f", "template_jrz5w7j", contact)
       .then((result) => {
         console.log(result.text);
       })
