@@ -21,6 +21,7 @@ button {
   box-shadow: none;
   border-style: none;
   margin-bottom: 58px;
+  cursor: pointer;
 }
 
 .intro-section-holder {
