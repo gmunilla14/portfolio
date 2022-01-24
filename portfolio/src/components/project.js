@@ -1,9 +1,10 @@
 import Skill from "./skill";
+import pic from '../req-website-jpeg.JPG'
 
 const Project = ({ title, metadata, oneLiner, description, skills }) => {
   return (
     <div className="project-holder">
-      <img className="project-image" src="https://via.placeholder.com/400" style={{width: "50%"}}/>
+      <img className="project-image" src={pic} style={{width: "50%"}}/>
       <div className="project-content">
         <div className="project-title">{title}</div>
         <div className="project-metadata">{metadata}</div>
