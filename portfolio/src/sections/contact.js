@@ -2,6 +2,8 @@ import TextInput from "../components/textInput";
 import Button from "../components/button";
 import emailjs from "@emailjs/browser";
 import { useState } from "react";
+import { ToastContainer, toast } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css'
 
 const Contact = () => {
   const [contact, setContact] = useState({
@@ -17,20 +19,20 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    var error = false
+    var error = false;
     if (contact.name === "") {
       setNoNameError(true);
-      error  = true
+      error = true;
     }
 
     if (contact.email === "") {
       setNoEmailError(true);
-      error = true
+      error = true;
     }
 
     if (contact.message === "") {
       setNoMessageError(true);
-      error = true
+      error = true;
     }
 
     if (error) {
@@ -41,12 +43,18 @@ const Contact = () => {
 
     emailjs
       .send("service_dkc114f", "template_jrz5w7j", contact)
-      .then((result) => {
-        console.log(result.text);
+      .then(() => {
+        toast.success("Thank you! Your message has been sent", {position: toast.POSITION.BOTTOM_RIGHT});
       })
-      .catch((error) => {
-        console.log(error.text);
+      .catch(() => {
+        toast.error("There was an error. Please try again.", {position: toast.POSITION.BOTTOM_RIGHT});
       });
+
+    setContact({
+      name: "",
+      email: "",
+      message: "",
+    });
   };
   return (
     <div className="contact-page-holder" id="contact-page-holder">
@@ -56,6 +64,7 @@ const Contact = () => {
           <TextInput
             title="Name"
             type="text"
+            value={contact.name}
             setValue={(e) => {
               setContact({ ...contact, name: e.target.value });
               setNoNameError(false);
@@ -65,6 +74,7 @@ const Contact = () => {
           <TextInput
             title="Email"
             type="email"
+            value={contact.email}
             setValue={(e) => {
               setContact({ ...contact, email: e.target.value });
               setNoEmailError(false);
@@ -74,6 +84,7 @@ const Contact = () => {
           <TextInput
             title="Message"
             type="textarea"
+            value={contact.message}
             setValue={(e) => {
               setContact({ ...contact, message: e.target.value });
               setNoMessageError(false);
@@ -84,6 +95,7 @@ const Contact = () => {
             <Button text="Send Message" className="send-button" />
           </div>
         </form>
+        <ToastContainer />
       </div>
     </div>
   );
