@@ -20,7 +20,7 @@ const Credentials = () => {
         <h3 className="technology-title">Technologies</h3>
         <div className="skills-holder" id="creds-skills-holder">
           {skills.map((skill) => {
-            return <Skill text={skill} />;
+            return <Skill text={skill} key={skill}/>;
           })}
         </div>
       </div>

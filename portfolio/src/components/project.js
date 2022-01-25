@@ -12,7 +12,7 @@ const Project = ({ title, metadata, oneLiner, description, skills }) => {
         <div className="project-description">{description}</div>
         <div className="skills-holder project-skills-holder" style={{ justifyContent: "start" }}>
           {skills.map((skill) => {
-            return <Skill text={skill} />;
+            return <Skill text={skill} key={skill} />;
           })}
         </div>
       </div>
