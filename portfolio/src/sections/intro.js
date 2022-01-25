@@ -7,9 +7,7 @@ const Intro = () => {
         <div className="hey">Hey 👋🏻</div>
         <div className="title">I'm Greg, software engineer</div>
         <div className="introduction">
-          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-          sint. Velit officia consequat duis enim velit mollit. Exercitation
-          veniam consequat sunt nostrud amet.
+          I use my experience in system design and passion for problem solving to produce client-facing software solutions.
         </div>
         <a href="#contact-page-holder">
           <Button text="Contact Me" />
