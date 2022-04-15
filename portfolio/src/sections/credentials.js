@@ -4,11 +4,15 @@ const Credentials = () => {
     "HTML",
     "CSS",
     "React",
+    "React Native",
     "MongoDB",
     "Node",
     "Express",
     "Redux",
     "Bootstrap",
+    "Jest",
+    "Chai",
+    "Postman"
   ];
   return (
     <div className="creds-section-holder" id='creds-section'>
