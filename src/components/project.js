@@ -9,11 +9,16 @@ const Project = ({
   skills,
   githubLink,
   liveLink,
-  pic
+  pic,
 }) => {
   return (
     <div className="project-holder">
-      <img className="project-image" src={pic} style={{ width: "50%" }} />
+      <img
+        className="project-image"
+        src={pic}
+        style={{ width: "50%" }}
+        alt={"screenshot for " + title}
+      />
       <div className="project-content">
         <div className="project-title">{title}</div>
         <div className="project-metadata">{metadata}</div>
@@ -21,7 +26,7 @@ const Project = ({
         <div className="project-description">{description}</div>
         <div className="project-btn-holder">
           {githubLink && (
-            <a href={githubLink} target="_blank">
+            <a href={githubLink} target="_blank" rel="noreferrer">
               <Button
                 text="Github"
                 style={{
@@ -36,7 +41,7 @@ const Project = ({
             </a>
           )}
           {liveLink && (
-            <a href={liveLink} target="_blank">
+            <a href={liveLink} target="_blank" rel="noreferrer">
               <Button
                 text="View Live"
                 style={{
