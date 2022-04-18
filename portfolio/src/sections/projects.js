@@ -1,4 +1,7 @@
 import Project from "../components/project";
+import pic from "../req-website-jpeg.JPG";
+import workoutPic from "../tracker_iphone_jpeg.jpeg"
+
 
 const Projects = () => {
   return (
@@ -19,6 +22,8 @@ const Projects = () => {
           "Redux",
           "Postman",
         ]}
+        githubLink="https://github.com/gmunilla14/Workout-Tracker"
+        pic={workoutPic}
       />
       <Project
         title="Requirements Host"
@@ -37,6 +42,7 @@ const Projects = () => {
         ]}
         githubLink="https://github.com/gmunilla14/Requirements_Host"
         liveLink="https://www.requirements-host.com/"
+        pic={pic}
       />
     </div>
   );

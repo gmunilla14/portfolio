@@ -1,5 +1,4 @@
 import Skill from "./skill";
-import pic from "../req-website-jpeg.JPG";
 import Button from "./button";
 
 const Project = ({
@@ -10,6 +9,7 @@ const Project = ({
   skills,
   githubLink,
   liveLink,
+  pic
 }) => {
   return (
     <div className="project-holder">
