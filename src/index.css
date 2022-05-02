@@ -328,6 +328,16 @@ textarea:focus {
   .project-skills-holder {
     width: 80%;
   }
+
+  .project-btn-holder {
+    flex-wrap: wrap;
+  }
+
+  .project-btn-holder > a > button {
+    margin-bottom: 12px;
+  }
+  
+
 }
 
 @media (max-width: 375px) {
@@ -386,4 +396,11 @@ textarea:focus {
   .project-skills-holder {
     width: 100%;
   }
+
+  button {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+
 }
